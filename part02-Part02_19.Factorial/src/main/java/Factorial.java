@@ -5,6 +5,12 @@ public class Factorial {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
+        System.out.println("Give a number:");
+        int factorialNumber = scanner.nextInt();
+        int factorial = 1;
+        for (int i = 1; i <= factorialNumber; i++) {
+            factorial *= i;
+        }
+        System.out.println("Factorial: "+factorial);
     }
 }
