@@ -1,12 +1,10 @@
-
-
 import java.util.Scanner;
 
 public class IndexWasNotFound {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int[] array = new int[10];
+        int[] array = new int[8];
         array[0] = 6;
         array[1] = 2;
         array[2] = 8;
@@ -20,6 +18,17 @@ public class IndexWasNotFound {
         int searching = Integer.valueOf(scanner.nextLine());
 
         // Implement the search functionality here
+        int index = -1;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == searching) {
+                index = i;
+            }
+        }
+        if (index == -1) {
+            System.out.println(searching+" was not found.");
+        } else {
+            System.out.println(searching+" is at index "+index+".");
+        }
     }
 
 }
