@@ -3,7 +3,7 @@ public class MainProgram {
     public static void main(String[] args) {
         PaymentCard paulsCard = new PaymentCard(20);
         PaymentCard mattsCard = new PaymentCard(30);
-        
+        //tasks
         paulsCard.eatHeartily();
         mattsCard.eatAffordably();
         
